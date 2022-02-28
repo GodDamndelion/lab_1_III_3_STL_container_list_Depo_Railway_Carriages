@@ -23,7 +23,7 @@ public:
 	void set_release_year(int input) { release_year = input; }
 	int get_number() { return number; }
 	int get_release_year() { return release_year; }
-	virtual void print();
+	virtual void print(); ////////
 	int compare(Carriage obj);
 };
 
@@ -45,7 +45,7 @@ public:
 	passenger_carriage_type get_type() { return type; }
 	int get_number_of_seats() { return number_of_seats; }
 	bool get_presence_of_a_shower_module() { return presence_of_a_shower_module; }
-	void print();
+	void print(); /////
 };
 
 class Freight_Carriage : public Carriage
@@ -63,5 +63,5 @@ public:
 	void set_tonnage(int input) { tonnage = input; }
 	freight_carriage_type get_type() { return type; }
 	int get_tonnage() { return tonnage; }
-	void print();
+	void print(); ///////
 };

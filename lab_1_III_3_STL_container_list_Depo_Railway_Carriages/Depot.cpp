@@ -49,15 +49,12 @@ void Depot::sort()
 
 Depot::~Depot()
 {
-	list<Carriage*>::iterator iter = list_of_carriages.end();
-	--iter;
-	while (iter != list_of_carriages.begin())
+	list<Carriage*>::iterator iter = list_of_carriages.begin();
+	while (iter != list_of_carriages.end())
 	{
 		delete (*iter);
 		(*iter) = nullptr;
-		iter--;
+		iter++;
 	}
-	delete (*iter);
-	(*iter) = nullptr;
 	/*list_of_carriages.clear();*/
 }
